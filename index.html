@@ -1,0 +1,242 @@
+<!--  Trying to create my own portfolio -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Mishra Portfolio</title>
+
+    <!--  css file link -->
+    <link rel="stylesheet" href="./CSS files/newmain.css">
+
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- --------------- -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
+    <!-- fontawsome link -->
+
+    <script src="https://kit.fontawesome.com/e3e211d8b5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <audio autoplay loop src="./Assests/y2mate.com - Space Sounds for sleep.mp3" type="audio/mp3"></audio>
+
+    <section class="parallax">
+        <h3 id="text">Explore my world</h3>
+        <img src="./Assests/tree-left.png" id="tree-left">
+        <img src="./Assests/tree-right.png" id="tree-right">
+        <img src="./Assests/gate-left.png" id="gate-left">
+        <img src="./Assests/gate-right.png" id="gate-right">
+        
+
+        <script>
+            let text = document.getElementById('text');
+    let treeLeft = document.getElementById('tree-left');
+    let treeRight = document.getElementById('tree-right');
+    let gateLeft = document.getElementById('gate-left');
+    let gateRight = document.getElementById('gate-right');
+    
+    window.addEventListener('scroll', () =>{
+        let value = window.scrollY;
+    
+        text.style.marginTop = value * -2.5 + 'px';
+        treeLeft.style.left = value * -1.5 + 'px';
+        treeRight.style.left = value * 1.5 + 'px';
+        gateLeft.style.left = value * -0.78 + 'px';
+        gateRight.style.left = value * +0.85 + 'px';
+
+        if(treeLeft.style.left = 200)
+        {
+            return
+        }
+    });
+        </script>
+    </section>
+
+    <!-- js for parallax -->
+    
+
+    <!-- New Style -->
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <nav class="navbar">
+            <a href="#"  style="--i:1;" class="active">Home</a>
+            <a href="#about" style="--i:2;">About</a>
+            <a href="#gallery" style="--i:3;">Gallery</a>
+            <a href="#projects" style="--i:4;">Projects</a>
+            <a href="#contact" style="--i:5;">Contact</a>
+        </nav>
+    </header>
+    
+    
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Aryan Mishra</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>I build value through design
+
+    
+                who loves building websites & digital products</p>
+                <div class="social-media">
+                    <a href="#" style="--i:7;"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://github.com/Aryan1104"  style="--i:8;"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.instagram.com/__aryan__1104/" style="--i:9;"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.linkedin.com/in/aryan-mishra-ba0560229/" style="--i:10;"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1FTf8iincOEilFqSrnymPlCuMRgRru-dK/view?usp=drivesdk" class="btn">Download CV</a>
+        </div>
+        <div class="home-image">
+            <img src="./Assests/Picsart_23-07-10_22-36-26-459.png" height="550px" alt="">
+        </div>
+    </section>
+
+    <hr>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./js file/script.js"></script>
+
+
+    <!-- About me section -->
+
+    <section id="about" class="about">
+        <div class="main">
+            <img src="./Assests/Picsart_23-03-23_14-07-44-571.png" alt="">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Developer <span> & Designer</span></h5>
+                <p>I am a full-stack Web-Developer. I can provide clean code and pixel perfect design. I also make the
+                    website more & more interactive with web animations. Ican provide clean code and pixel perfect
+                    design. I also make the website more & more interactive with web animations. A responsive design
+                    maked your website accessible to all users, regardless of their devices.</p>
+                <a href="./skills.html"><button type="button">More About Me...</button></a>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- service section -->
+    <div id="projects" class="service reveal">
+        <div class="title">
+            <h2>My Projects</h2>
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-bars"></i>
+                <h5>Project 1</h5>
+                <div class="pra">
+                    <img src="./Assests/musicplayer.jpg " height="70%" width="89%" alt="">
+
+                    <img style="text-align : center;">
+                        <a class="button" href="./project in site/project 1 portfolio/Site.html">View Project</a>
+                    </img>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <i class="fa-regular fa-user"></i>
+                <h5>Project 2</h5>
+                <div class="pra">
+                    <img src="./Assests/emojiselector.jpg" height="70%" width="89%" alt="">
+
+                    <p style="text-align : center;">
+                        <a class="button" href="https://aryan1104.github.io/Emoji_API/">View Project</a>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <i class="fa-regular fa-bell"></i>
+                <h5>Project 3</h5>
+                <div class="pra">
+                    <img src="./Assests/rrr.jpg" height="50%" width="89%" alt="">
+
+                    <p style="text-align : center;">
+                        <a class="button" href="./project in site/projest  3  food order/order.html">View Project</a>
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <!-- js for service -->
+
+    <!-- image gallery -->
+
+    <div id="gallery" class="pic-container">
+        <h1>Image Gallery</h1>
+        
+        <div class="img-container">
+                
+                <div><img class="image"  src="./Assests/gallery/P-IMG-20230227-WA0112.jpg" alt=""></div>
+                <div><img class="image" src="./Assests/gallery/IMG_20230409_225356.jpg" alt=""></div>
+                <div><img class="image" src=".//Assests/gallery/Screenshot_2023-03-02-01-20-39-48_2768c6f3dd71c987876b7b9730ce2453.jpg" alt=""></div>
+                <div><img class="image" src="./Assests/gallery/Screenshot_2023-04-09-16-09-54-07_1c337646f29875672b5a61192b9010f9.jpg" alt=""></div>
+                <div><img class="image" src="./Assests/gallery/volleyball.jpg" alt=""></div>
+                <div><img class="image" src="./Assests/P-IMG-20230303-WA0030.jpg" alt=""></div>
+
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img class="image"  src="./Assests/gallery/P-IMG-20230227-WA0112.jpg" alt="">
+        </div>
+    </div>
+<!-- image gallery js  -->
+    <script>
+        document.querySelectorAll('.img-container img').forEach(image =>{
+            image.onclick = () => {
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        })
+
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+
+
+
+    <!--  contac me--- -->
+    <div id="contact" class="contact-me">
+        <p>Let Me Get You A Beautiful Website.</p>
+        <a class="button-two" href="./contactForm.html">Hire Me</a>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p>Aryan Mishra</p>
+        <p>Wanna some for web design - Please contact me</p>
+
+        <p class="end">
+            @CopyRight By Aryan Mishra
+        </p>
+    </footer>
+
+</body>
+</html>
